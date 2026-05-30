@@ -20,7 +20,8 @@ export default function App() {
   const { theme, toggle } = useTheme()
 
   return (
-    <>
+    <div>
+      <h1>My Portfolio</h1>
       <ScrollToTop />
       <Header theme={theme} onThemeToggle={toggle} />
       <main>
@@ -28,6 +29,6 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
         </Routes>
       </main>
-    </>
+    </div>
   )
 }

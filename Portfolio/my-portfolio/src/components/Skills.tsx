@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { skills, type Skill} from "../data/portfolio"
 
 
