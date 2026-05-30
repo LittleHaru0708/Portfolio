@@ -80,3 +80,20 @@ export interface TimelineItem {
   year: string
   event: string
 }
+
+export const profile: Profile = {
+  name: "寺田 晴輝",
+  nameEn: "Haruto Terada",
+  role: "Game Programmer",
+  school: "京都コンピュータ学院",
+  department: "ゲーム開発学科",
+  graduationYear: "2027",
+  bio: "ゲームプログラマーを目指して学習中",
+  motto: null,
+  avatar: null,
+  links: {
+    github: "https://github.com/LittleHaru0708",
+    twitter: "",
+    email: "",
+  },
+};
