@@ -97,3 +97,79 @@ export const profile: Profile = {
     email: "",
   },
 };
+
+export const skills:Skill[]=[
+  {
+    name: "",
+    version: "",
+    level: 0,
+    category: "",
+    capabilities: [],
+    note: null
+  }
+]
+
+export const Venues:Venue[]=[
+  {
+    name: "",
+    date: ""
+  }
+]
+
+export const works:Work[]=[
+  {
+    id: 0,
+    title: "",
+    genre: "",
+    category: "",
+    thumbnail: null,
+    screenshots: [],
+    description: "",
+    tags: [],
+    platform: [],
+    period: "",
+    team: "",
+    role: "",
+    github: null,
+    link: null,
+    venues: [],
+    techPoints: null,
+    designNotes: null,
+    implementationTheme: null,
+    troubleshooting: null,
+    performance: null
+  }
+]
+
+export const gamejams:GameJam[]=[
+  {
+    name: "",
+    date: "",
+    theme: "",
+    description: "",
+    platform: [],
+    role: "",
+    team: "",
+    result: null,
+    url: null,
+    reflection: ""
+  }
+]
+
+export const Certifications:Certification[]=[
+  {
+    name: "",
+    date: "",
+    category: "",
+    score: null,
+    status: "取得済み"
+  }
+]
+
+export const timelines:TimelineItem[]=[
+  {
+    year: "",
+    event: ""
+  }
+]
+

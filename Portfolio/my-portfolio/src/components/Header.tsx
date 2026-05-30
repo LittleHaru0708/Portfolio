@@ -6,15 +6,16 @@ interface Props {
   onThemeToggle: () => void;
 }
 
-export default function Header({theme, onThemeToggle,}: Props) {
+export default function Header({
+  theme,
+  onThemeToggle,
+}: Props) {
   const navItems = [{ label: "About", hash: "about" }];
 
   return (
     <header className="header">
       <div className="container">
         <div className="header-inner">
-
-          {/* ロゴ表示部分 */}
           <Link to="/" className="header-logo">
             {profile.nameEn.split(" ")[0]}
             <span>.</span>
@@ -32,6 +33,17 @@ export default function Header({theme, onThemeToggle,}: Props) {
             </ul>
           </nav>
 
+          <button
+            className="theme-toggle"
+            onClick={onThemeToggle}
+            aria-label={
+              theme === "dark"
+                ? "ライトモードに切り替え"
+                : "ダークモードに切り替え"
+            }
+          >
+            {theme === "dark" ? "☀️" : "🌙"}
+          </button>
         </div>
       </div>
     </header>

@@ -1,28 +1,33 @@
-import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import ScrollToTop from "./components/ScrollToTop";
-import { useTheme } from "./hooks/useTheme";
+import { Route, Routes } from "react-router-dom"
+import Header from "./components/Header"
+import ScrollToTop from "./components/ScrollToTop"
+import { useTheme } from "./hooks/useTheme"
+import Hero from "./components/Hero"
+import About from "./components/About"
+import Skills from "./components/Skills"
 
 function HomePage() {
   return (
     <>
+       <Hero/>
+       <About/>
+       <Skills/>
     </>
-  );
+  )
 }
 
 export default function App() {
-  const { theme, toggle } = useTheme();
+  const { theme, toggle } = useTheme()
 
   return (
     <>
       <ScrollToTop />
       <Header theme={theme} onThemeToggle={toggle} />
-
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
       </main>
     </>
-  );
+  )
 }
